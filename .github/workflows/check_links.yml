@@ -22,9 +22,9 @@ jobs:
           fail: true
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-          
-     - name: Upload link report
-       uses: actions/upload-artifact@v3
-       with:
-         name: 
-         path: ./lychee/out.md
+
+      - name: Upload link report
+        uses: actions/upload-artifact@v3
+        with:
+          name: link-report.md
+          path: ./lychee/out.md
