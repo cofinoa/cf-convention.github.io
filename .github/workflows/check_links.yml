@@ -23,6 +23,8 @@ jobs:
         uses: lycheeverse/lychee-action@v1.8.0
         with:
           fail: true
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
         
       - name: Upload report
         if: ${{ always() }}
