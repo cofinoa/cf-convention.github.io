@@ -333,6 +333,12 @@ The service returns subsets as CF compliant netCDF-3/4 files, in addition to oth
 <p><a href="http://xarray.pydata.org/">Xarray</a> is a python package designed for working with labelled, multi-dimensional array data, built around the netCDF data model.
 It uses CF Conventions in several ways, such as encoding / decoding variables and interpreting metadata for visualization.</p>
 
+<h4 id="pandera-xarray---schema-validation-for-xarray-datasets">Pandera xarray - schema validation for xarray datasets</h4>
+
+<p><a href="https://pandera.readthedocs.io/en/latest/xarray_guide/index.html">Pandera xarray</a> extends Pandera with support for validating xarray <code class="language-plaintext highlighter-rouge">Dataset</code>, <code class="language-plaintext highlighter-rouge">DataArray</code>, and <code class="language-plaintext highlighter-rouge">DataTree</code> objects. It can validate dimensions, variable names, data types, and selected metadata conventions, including some checks related to CF metadata such as <code class="language-plaintext highlighter-rouge">standard_name</code> and <code class="language-plaintext highlighter-rouge">units</code>.</p>
+
+<p>This makes it a useful schema validation tool for xarray-based workflows that want to enforce some CF-related expectations, even though it is not a full CF compliance checker.</p>
+
 <h3 id="gridded---a-python-api-for-accessing--working-with-gridded-model-results-on-multiple-grid-types"><code class="language-plaintext highlighter-rouge">gridded</code> - A Python API for accessing / working with gridded model results on multiple grid types</h3>
 
 <p><a href="https://github.com/NOAA-ORR-ERD/gridded">gridded</a> is a python package designed for working with
